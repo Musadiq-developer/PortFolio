@@ -1,0 +1,128 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  padding: 10px 0 0 15%;
+  gap: 50px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  transform: scale(1.05);
+  color: red;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+  background-color: #111; 
+  color: white;
+  position: relative;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+
+.hero-text {
+  transform: translateX(-100px);
+  opacity: 0;
+  animation: faderight 2s forwards;
+}
+
+@keyframes faderight {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #ccc; 
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color:rgb(47, 211, 47); 
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  animation: btn-hire 4s forwards;
+}
+
+@keyframes btn-hire {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.btn:hover {
+  /* background-color: #ff3d00;  */
+  transform: scale(1.05);
+}
+
+.hero-image {
+  width: 400px;
+  height: 520px;
+  background-image: url("portfoli-image.png"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  transform: translateX(-50px);
+  opacity: 0;
+  animation: hero-image-anim 2s 1s forwards;
+}
+
+@keyframes hero-image-anim {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
