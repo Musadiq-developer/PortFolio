@@ -4,36 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Musadiq Portfolio</title>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    crossorigin="anonymous"
+  />
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
-  <header>
-    <nav>
-      <ul class="nav-list">
-        <a href="#" class="nav-link"><li>Home</li></a>
-        <a href="#" class="nav-link"><li>Skills</li></a>
-        <a href="#" class="nav-link"><li>Projects</li></a>
-        <a href="#" class="nav-link"><li>About</li></a>
-        <a href="#" class="nav-link"><li>Contact</li></a>
-      </ul>
-    </nav>
-  </header>
 
+<!-- HEADER -->
+<header class="m-header">
+  <nav class="navBar">
+    <div class="logo">Musadiq</div>
 
-  <section class="hero">
-    <div class="hero-content">
-     
-      <div class="hero-text">
-        <h1>Hello, I am Musadiq</h1>
-        <p>I am a Web & App Developer</p>
-        <a href="#contact" class="btn">Hire Me</a>
-      </div>
-
-      
-      <div class="hero-image"></div>
+    <div class="menu-toggle" id="menuToggle">
+      <i class="fa-solid fa-bars"></i>
     </div>
-  </section>
-  
+
+    <ul class="nav-list" id="navList">
+      <li><a href="#" class="nav-link">Home</a></li>
+      <li><a href="#" class="nav-link">Skills</a></li>
+      <li><a href="#" class="nav-link">Projects</a></li>
+      <li><a href="#" class="nav-link">About</a></li>
+      <li><a href="#" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content glass-card">
+
+    <div class="hero-text">
+      <h1>Hello, I’m <span>Musadiq</span></h1>
+      <p>Web & App Developer</p>
+      <a href="#contact" class="btn">Hire Me</a>
+    </div>
+
+    <div class="hero-image"></div>
+
+  </div>
+</section>
+
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const navList = document.getElementById("navList");
+
+  menuToggle.addEventListener("click", () => {
+    navList.classList.toggle("active");
+  });
+</script>
+
 </body>
 </html>
