@@ -3,37 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Musadiq Portfolio</title>
+  <title>Musadiq | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
-  <header>
-    <nav>
-      <ul class="nav-list">
-        <a href="#" class="nav-link"><li>Home</li></a>
-        <a href="#" class="nav-link"><li>Skills</li></a>
-        <a href="#" class="nav-link"><li>Projects</li></a>
-        <a href="#" class="nav-link"><li>About</li></a>
-        <a href="#" class="nav-link"><li>Contact</li></a>
-      </ul>
-    </nav>
-  </header>
 
-
-  <section class="hero">
-    <div class="hero-content">
-     
-      <div class="hero-text">
-        <h1>Hello, I am Musadiq</h1>
-        <p>I am a Web & App Developer</p>
-        <a href="#contact" class="btn">Hire Me</a>
-      </div>
-
-      
-      <div class="hero-image"></div>
+<header class="m-header">
+  <nav class="navBar">
+    <div class="logo">Musadiq<span>.</span></div>
+    <div class="menu-toggle" id="menuToggle">
+      <i class="fa-solid fa-bars"></i>
     </div>
-  </section>
-  
+    <ul class="nav-list" id="navList">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content glass-card">
+    <div class="hero-text">
+      <h1>Hello, I’m <span>Musadiq</span></h1>
+      <h3>Full-Stack Developer</h3>
+      <p>Software Engineering Student at Virtual University. Specializing in high-performance web and mobile applications with a focus on clean code.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn">Hire Me</a>
+        <a href="#" class="btn btn-outline">CV Download</a>
+      </div>
+    </div>
+    <div class="hero-image">
+       <img src="portfoli-image.png" alt="Musadiq Profile Image">
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2 class="section-title">About <span>Me</span></h2>
+  <div class="about-container glass-card">
+    <div class="about-text">
+      <p>I am a dedicated <strong>Software Engineering Student</strong> at Virtual University with a passion for turning complex problems into simple, beautiful digital solutions.</p>
+      <br>
+      <p>I bridge the gap between backend logic (PHP, .NET) and frontend design (Flutter, Bootstrap). I am committed to continuous learning and excellence in every project.</p>
+    </div>
+  </div>
+</section>
+
+<section class="skills" id="skills">
+  <h2 class="section-title">Technical <span>Stack</span></h2>
+  <div class="skills-container">
+    <div class="skill-card"><i class="fa-brands fa-html5"></i><p>HTML</p></div>
+    <div class="skill-card"><i class="fa-brands fa-css3-alt"></i><p>CSS</p></div>
+    <div class="skill-card"><i class="fa-brands fa-js"></i><p>JavaScript</p></div>
+    <div class="skill-card"><i class="fa-brands fa-bootstrap"></i><p>Bootstrap</p></div>
+    <div class="skill-card"><i class="fa-brands fa-php"></i><p>PHP</p></div>
+    <div class="skill-card"><i class="fa-solid fa-database"></i><p>MySQL / SQL Server</p></div>
+    <div class="skill-card"><i class="fa-solid fa-code"></i><p>.NET / C#</p></div>
+    <div class="skill-card"><i class="fa-solid fa-mobile-screen-button"></i><p>Flutter / Dart</p></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="section-title">Get In <span>Touch</span></h2>
+  <div class="contact-card glass-card">
+    <form action="https://formspree.io/f/your_formspree_id_here" method="POST">
+      <input type="text" name="name" placeholder="Your Full Name" required>
+      <input type="email" name="email" placeholder="Your Email Address" required>
+      <textarea name="message" placeholder="Describe your project..." rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2024 Musadiq | Software Engineering Student | Virtual University</p>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const navList = document.getElementById("navList");
+  menuToggle.addEventListener("click", () => { navList.classList.toggle("active"); });
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      navList.classList.remove("active");
+    });
+  });
+</script>
 </body>
 </html>
