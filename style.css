@@ -23,9 +23,6 @@ body {
     overflow-x: hidden;
 }
 
-/* ==========================================
-   PROFESSIONAL INLINE ANIMATIONS (STARTING)
-   ========================================== */
 @keyframes slideUpHero {
     from {
         opacity: 0;
@@ -71,9 +68,6 @@ body {
     animation: popInImg 1s cubic-bezier(0.175, 0.885, 0.32, 1.15) forwards;
 }
 
-/* ==========================================
-   SCROLL REVEAL STRUCTURES (INTERSECTION)
-   ========================================== */
 .scroll-reveal {
     opacity: 0;
     transform: translateY(40px);
@@ -90,13 +84,11 @@ body {
     transform: translateX(50px);
 }
 
-/* The state injected by JavaScript on scroll viewport entrance */
 .scroll-reveal.active {
     opacity: 1;
     transform: translate(0) !important;
 }
 
-/* Navbar Layout */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -143,7 +135,6 @@ body {
     cursor: pointer;
 }
 
-/* Base Sections */
 section {
     padding: 8rem 10% 4rem 10%;
     min-height: 100vh;
@@ -162,7 +153,6 @@ section {
     color: var(--accent-color);
 }
 
-/* Buttons */
 .btn {
     display: inline-block;
     padding: 0.75rem 2rem;
@@ -190,7 +180,7 @@ section {
     background-color: transparent;
     color: var(--text-main);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    margin-left: 1rem;
+    margin-left: 0;
 }
 
 .secondary-btn:hover {
@@ -199,7 +189,6 @@ section {
     transform: translateY(-3px);
 }
 
-/* Hero Elements & Updated Image Dimensions */
 .hero-section {
     display: flex;
     flex-direction: row;
@@ -237,12 +226,17 @@ section {
     margin-bottom: 2.5rem;
 }
 
+.hero-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
 .hero-image {
     flex: 0.8;
     display: flex;
     justify-content: center;
 }
-
 
 .image-wrapper {
     width: 380px; 
@@ -264,7 +258,6 @@ section {
     height: 100%;
     object-fit: cover;
 }
-
 
 .skills-container {
     display: grid;
@@ -323,7 +316,6 @@ section {
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 5px 15px rgba(231, 57, 142, 0.3);
 }
-
 
 .timeline {
     max-width: 800px;
@@ -429,7 +421,6 @@ form input:focus, form textarea:focus {
     box-shadow: 0 0 10px rgba(231, 57, 142, 0.2);
 }
 
-
 footer {
     padding: 3rem 10%;
     background-color: #0b111e;
@@ -511,6 +502,10 @@ footer {
     
     .hero-content h1 { 
         font-size: 3rem; 
+    }
+
+    .hero-btns {
+        justify-content: center;
     }
     
     .image-wrapper { 
