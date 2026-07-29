@@ -23,6 +23,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Animations */
 @keyframes slideUpHero {
     from {
         opacity: 0;
@@ -68,6 +69,7 @@ body {
     animation: popInImg 1s cubic-bezier(0.175, 0.885, 0.32, 1.15) forwards;
 }
 
+/* Scroll Reveal Classes */
 .scroll-reveal {
     opacity: 0;
     transform: translateY(40px);
@@ -89,6 +91,7 @@ body {
     transform: translate(0) !important;
 }
 
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -135,6 +138,7 @@ body {
     cursor: pointer;
 }
 
+/* Sections */
 section {
     padding: 8rem 10% 4rem 10%;
     min-height: 100vh;
@@ -153,8 +157,11 @@ section {
     color: var(--accent-color);
 }
 
+/* Buttons */
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 0.75rem 2rem;
     border-radius: 6px;
     font-weight: 600;
@@ -189,6 +196,7 @@ section {
     transform: translateY(-3px);
 }
 
+/* Hero Section */
 .hero-section {
     display: flex;
     flex-direction: row;
@@ -208,9 +216,9 @@ section {
 }
 
 .hero-content h1 {
-    font-size: 4rem;
-    line-height: 1.1;
-    margin-bottom: 0.2rem;
+    font-size: 3.5rem;
+    line-height: 1.15;
+    margin-bottom: 1rem;
 }
 
 .hero-content h2 {
@@ -259,6 +267,7 @@ section {
     object-fit: cover;
 }
 
+/* Grid & Cards */
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -281,7 +290,7 @@ section {
 }
 
 .skill-category h3 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     font-size: 1.4rem;
     display: flex;
     align-items: center;
@@ -291,6 +300,12 @@ section {
 
 .skill-category h3 i {
     color: var(--accent-color);
+}
+
+.skill-category p {
+    color: var(--text-muted);
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 .tags {
@@ -317,11 +332,12 @@ section {
     box-shadow: 0 5px 15px rgba(231, 57, 142, 0.3);
 }
 
+/* Timeline / Experience */
 .timeline {
     max-width: 800px;
     margin: 0 auto;
     position: relative;
-    border-left: 2px solid var(--card-bg);
+    border-left: 2px solid rgba(231, 57, 142, 0.3);
 }
 
 .timeline-item {
@@ -350,15 +366,39 @@ section {
 
 .timeline-content {
     background-color: var(--card-bg);
-    padding: 1.5rem;
-    border-radius: 8px;
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    padding: 1.8rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
 }
 
 .timeline-content:hover {
     transform: translateX(8px);
+    border-color: var(--accent-color);
 }
 
+.timeline-content h3 {
+    font-size: 1.4rem;
+    color: var(--text-main);
+    margin-bottom: 0.2rem;
+}
+
+.timeline-content h4 {
+    font-size: 1.1rem;
+    color: var(--accent-glow);
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+
+.timeline-content p {
+    color: var(--text-muted);
+}
+
+.timeline-content ul li {
+    color: var(--text-muted);
+}
+
+/* Contact Section */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
@@ -421,6 +461,7 @@ form input:focus, form textarea:focus {
     box-shadow: 0 0 10px rgba(231, 57, 142, 0.2);
 }
 
+/* Footer */
 footer {
     padding: 3rem 10%;
     background-color: #0b111e;
@@ -459,6 +500,7 @@ footer {
     transform: translateY(-2px);
 }
 
+/* Mobile Responsive */
 @media (max-width: 768px) {
     .menu-btn { 
         display: block; 
@@ -501,7 +543,7 @@ footer {
     }
     
     .hero-content h1 { 
-        font-size: 3rem; 
+        font-size: 2.5rem; 
     }
 
     .hero-btns {
