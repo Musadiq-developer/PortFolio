@@ -18,13 +18,12 @@
 </head>
 <body>
 
-    <!-- Navbar Layout -->
     <nav class="navbar animate-fade-in">
         <div class="logo">Musadiq<span>.</span></div>
         <ul class="nav-links">
             <li><a href="#about" class="active">Home</a></li>
-            <li><a href="#services">Services</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#why-work-with-me">Why Me</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -33,10 +32,8 @@
         <div class="menu-btn"><i class="fas fa-bars"></i></div>
     </nav>
 
-    <!-- Hero / About Section -->
     <section id="about" class="hero-section">
         <div class="hero-content animate-slide-up">
-            <!-- Availability Badge -->
             <div class="status-badge">
                 <span class="status-pulse"></span> Available for Freelance &amp; Contract Work
             </div>
@@ -65,7 +62,94 @@
         </div>
     </section>
 
-    <!-- Freelance Services Section -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title scroll-reveal">Featured <span>Projects</span></h2>
+        <p class="section-subtitle">Real-world production architectures and software solutions built for scale.</p>
+        
+        <div class="projects-container">
+            
+            <div class="project-card scroll-reveal">
+                <div class="project-header">
+                    <div class="project-type"><i class="fas fa-shopping-cart"></i> E-Commerce &amp; N-Tier Architecture</div>
+                    <div class="project-links">
+                        <a href="https://github.com/Musadiq-developer/BookShop.git" target="_blank" aria-label="GitHub Repository" title="View Source Code">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <h3 class="project-title">BookShop</h3>
+                
+                <p class="project-description">
+                    A full-stack e-commerce web platform built using <strong>ASP.NET Core Web API</strong> with a clean <strong>Layered Architecture</strong> and dynamic <strong>Role-Based Access Control (RBAC)</strong>. Includes asynchronous API endpoints, DTO pattern abstraction, secure configuration management, and external integration capabilities alongside an upcoming Angular SPA frontend.
+                </p>
+
+                <div class="project-highlights">
+                    <span><i class="fas fa-check-circle"></i> Enterprise N-Tier / Layered Architecture</span>
+                    <span><i class="fas fa-check-circle"></i> Dynamic Role-Based Access Control (RBAC)</span>
+                    <span><i class="fas fa-check-circle"></i> Asynchronous API Endpoints &amp; DTO Abstraction</span>
+                </div>
+
+                <div class="project-tech-stack">
+                    <span>ASP.NET Core Web API</span>
+                    <span>C#</span>
+                    <span>RBAC</span>
+                    <span>DTO Pattern</span>
+                    <span>SQL Server</span>
+                    <span>Angular SPA</span>
+                </div>
+
+                <div class="project-footer">
+                    <a href="https://github.com/Musadiq-developer/BookShop.git" target="_blank" class="btn primary-btn project-btn">
+                        <i class="fab fa-github" style="margin-right: 8px;"></i> View Repository
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card scroll-reveal">
+                <div class="project-header">
+                    <div class="project-type"><i class="fas fa-user-graduate"></i> Enterprise Backend &amp; Web API</div>
+                    <div class="project-links">
+                        <a href="https://github.com/Musadiq-developer/StudentManagementPortal" target="_blank" aria-label="GitHub Repository" title="View Source Code">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <h3 class="project-title">Student Management Portal</h3>
+                
+                <p class="project-description">
+                    Enterprise-grade Student Management Portal built with <strong>.NET Minimal APIs</strong>, <strong>Clean Architecture</strong>, <strong>CQRS Pattern</strong>, <strong>Repository Pattern</strong>, <strong>Dapper</strong>, and <strong>SQL Server</strong>—featuring <strong>Serilog</strong>, Global Exception Handling, and an upcoming Angular SPA frontend.
+                </p>
+
+                <div class="project-highlights">
+                    <span><i class="fas fa-check-circle"></i> Clean Architecture &amp; CQRS Pattern</span>
+                    <span><i class="fas fa-check-circle"></i> High-Performance Dapper &amp; Repository Pattern</span>
+                    <span><i class="fas fa-check-circle"></i> Structured Serilog Logging &amp; Global Exception Handling</span>
+                </div>
+
+                <div class="project-tech-stack">
+                    <span>.NET Minimal APIs</span>
+                    <span>C#</span>
+                    <span>Clean Architecture</span>
+                    <span>CQRS</span>
+                    <span>Repository Pattern</span>
+                    <span>Dapper</span>
+                    <span>SQL Server</span>
+                    <span>Serilog</span>
+                    <span>Angular SPA</span>
+                </div>
+
+                <div class="project-footer">
+                    <a href="https://github.com/Musadiq-developer/StudentManagementPortal" target="_blank" class="btn primary-btn project-btn">
+                        <i class="fab fa-github" style="margin-right: 8px;"></i> View Repository
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
     <section id="services" class="services-section">
         <h2 class="section-title scroll-reveal">My <span>Services</span></h2>
         <p class="section-subtitle">Delivering high-performance, secure, and scalable solutions tailored to your business needs.</p>
@@ -88,61 +172,10 @@
         </div>
     </section>
 
-    <!-- Featured Projects Section -->
-    <section id="projects" class="projects-section">
-        <h2 class="section-title scroll-reveal">Featured <span>Projects</span></h2>
-        <p class="section-subtitle">Real-world production architectures and software solutions built for scale.</p>
-        
-        <div class="projects-container">
-            <!-- Student Management Portal Project Card -->
-            <div class="project-card scroll-reveal">
-                <div class="project-header">
-                    <div class="project-type"><i class="fas fa-folder-open"></i> Enterprise Backend &amp; Web API</div>
-                    <div class="project-links">
-                        <a href="https://github.com/Musadiq-developer/StudentManagementPortal" target="_blank" aria-label="GitHub Repository" title="View Source Code">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <h3 class="project-title">Student Management Portal</h3>
-                
-                <p class="project-description">
-                    Enterprise-grade Student Management Portal built with <strong>.NET Minimal APIs</strong>, 
-                    strict <strong>Clean Architecture</strong> pattern, and <strong>SQL Server</strong>. Implements structured 
-                    <strong>Serilog</strong> logging, centralized Global Exception Handling middleware, EF Core migrations, and engineered for an upcoming Angular SPA frontend.
-                </p>
-
-                <div class="project-highlights">
-                    <span><i class="fas fa-check-circle"></i> Clean Architecture (Core, Infrastructure, API)</span>
-                    <span><i class="fas fa-check-circle"></i> Structured Serilog Logging</span>
-                    <span><i class="fas fa-check-circle"></i> Global Exception Handling</span>
-                </div>
-
-                <div class="project-tech-stack">
-                    <span>.NET Minimal APIs</span>
-                    <span>C#</span>
-                    <span>SQL Server</span>
-                    <span>EF Core</span>
-                    <span>Serilog</span>
-                    <span>Angular (Upcoming)</span>
-                </div>
-
-                <div class="project-footer">
-                    <a href="https://github.com/Musadiq-developer/StudentManagementPortal" target="_blank" class="btn primary-btn project-btn">
-                        <i class="fab fa-github" style="margin-right: 8px;"></i> View Repository
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
     <section id="skills" class="skills-section">
         <h2 class="section-title scroll-reveal">Technical <span>Skills</span></h2>
         <div class="skills-container">
             
-            <!-- Frontend Card -->
             <div class="skill-category scroll-reveal reveal-left">
                 <h3><i class="fas fa-laptop-code"></i> Frontend &amp; Mobile</h3>
                 <div class="tags">
@@ -155,35 +188,36 @@
                 </div>
             </div>
 
-            <!-- Backend Card -->
             <div class="skill-category scroll-reveal">
                 <h3><i class="fas fa-server"></i> Backend &amp; API</h3>
                 <div class="tags">
                     <span>.NET Core</span>
                     <span>C#</span>
                     <span>ASP.NET Web APIs</span>
+                    <span>Python</span>
                     <span>Express.js</span>
                     <span>Node.js</span>
                     <span>PHP</span>
                 </div>
             </div>
 
-            <!-- Database Card -->
             <div class="skill-category scroll-reveal reveal-right">
                 <h3><i class="fas fa-database"></i> Databases &amp; Architecture</h3>
                 <div class="tags">
                     <span>SQL Server</span>
+                    <span>Dapper</span>
+                    <span>Clean Architecture</span>
+                    <span>CQRS Pattern</span>
+                    <span>Repository Pattern</span>
                     <span>MySQL</span>
                     <span>MongoDB</span>
                     <span>Layered Architecture</span>
-                    <span>XML</span>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <!-- Why Work With Me Section -->
     <section id="why-work-with-me" class="why-section">
         <h2 class="section-title scroll-reveal">Why Work <span>With Me</span></h2>
         <div class="why-container">
@@ -205,12 +239,10 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience" class="experience-section">
         <h2 class="section-title scroll-reveal">Work <span>Experience</span></h2>
         <div class="timeline">
             
-            <!-- ThinkEd Solutions -->
             <div class="timeline-item scroll-reveal reveal-left">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">Present</div>
@@ -221,7 +253,6 @@
                 </div>
             </div>
             
-            <!-- Aptech Computer Education -->
             <div class="timeline-item scroll-reveal reveal-right">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">4 Months</div>
@@ -232,7 +263,6 @@
                 </div>
             </div>
 
-            <!-- Wenawa Trainee Role -->
             <div class="timeline-item scroll-reveal reveal-left">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2 Months</div>
@@ -246,7 +276,6 @@
         </div>
     </section>
 
-    <!-- Freelance CTA Banner Box -->
     <div class="cta-banner-container scroll-reveal">
         <div class="cta-banner">
             <div class="cta-text">
@@ -264,7 +293,6 @@
         </div>
     </div>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <h2 class="section-title scroll-reveal">Let's <span>Connect</span></h2>
         <div class="contact-grid">
@@ -291,7 +319,6 @@
         </div>
     </section>
 
-    <!-- Footer Layout -->
     <footer>
         <div class="footer-content">
             <p>&copy; 2026 | Musadiq Channa. All Rights Reserved.</p>
